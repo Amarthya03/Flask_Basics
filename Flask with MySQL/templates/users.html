@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Users</title>
+</head>
+<body>
+	<table border="2">
+		<thead>
+			<th>Name:</th>
+			<th>E-Mail</th>
+		</thead>
+		{% for user in userDetails %}
+		<tr>
+			<td>{{ user[0] }}</td>
+			<td>{{ user[1] }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+
+	<a href="{{ url_for('index') }}">Go back</a>
+</body>
+</html>
+
+<input type="text" name="" id="">
